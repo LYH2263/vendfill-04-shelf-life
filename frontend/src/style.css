@@ -170,6 +170,18 @@ th { color: var(--vf-dim); font-weight: 600; font-size: 0.75rem; }
 }
 .btn:hover { filter: brightness(1.08); }
 .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.vf-input {
+  width: 3.2rem; background: #0a0c10; color: var(--vf-text);
+  border: 1px solid #3a4656; border-radius: 3px;
+  padding: 0.15rem 0.3rem; font-size: 0.72rem;
+}
+.vf-input:focus { outline: none; border-color: var(--vf-led); }
+.vf-mini-btn {
+  background: var(--vf-led); color: #041208; border: none; border-radius: 3px;
+  padding: 0.18rem 0.5rem; font-size: 0.7rem; font-weight: 700; cursor: pointer;
+}
+.vf-mini-btn:hover { filter: brightness(1.08); }
+.vf-err { color: var(--vf-red); font-size: 0.66rem; display:block; }
 .muted { color: var(--vf-dim); }
 .stat { font-size: 1.55rem; font-weight: 800; color: var(--vf-led); }
 

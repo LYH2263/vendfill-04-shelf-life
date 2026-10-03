@@ -19,6 +19,8 @@ class Lane(Base):
     capacity: Mapped[int] = mapped_column(Integer)
     stock: Mapped[int] = mapped_column(Integer, default=0)
     in_transit: Mapped[int] = mapped_column(Integer, default=0)
+    # 临期可售天数；NULL/留空表示不启用临期封顶，只按缺口补货
+    sellable_days: Mapped[int | None] = mapped_column(Integer, nullable=True, default=None)
 
 class Sale(Base):
     __tablename__ = "sales"
