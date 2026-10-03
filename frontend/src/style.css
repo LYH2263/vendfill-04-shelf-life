@@ -175,3 +175,12 @@ th { color: var(--vf-dim); font-weight: 600; font-size: 0.75rem; }
 
 .lane { display: flex; height: 28px; background: #0a0c10; border-radius: 4px; overflow: hidden; border: 1px solid #3a4656; margin: 0.35rem 0; }
 .lane-fill { height: 100%; }
+
+.vf-days { display: flex; align-items: center; gap: 0.35rem; margin-top: 0.35rem; font-size: 0.68rem; color: var(--vf-dim); }
+.vf-days input {
+  width: 3.4rem; background: #0a0c10; border: 1px solid #3a4656; color: #e8edf2;
+  border-radius: 3px; padding: 0.15rem 0.3rem; font-size: 0.72rem;
+}
+.vf-days-save { padding: 0.15rem 0.5rem; font-size: 0.68rem; }
+.vf-reason { color: var(--vf-amber); font-weight: 700; }
+.vf-err { color: var(--vf-red); font-size: 0.8rem; margin: 0.4rem 0; }
